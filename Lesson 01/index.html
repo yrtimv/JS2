@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Level 2 homework, leson 01</title>
+		<style>
+			#totalPriceLabel,
+			#totalCaloriesLabel,
+			#errorMessage {
+				display: none;
+			}
+			#totalPriceValue,
+			#totalCaloriesValue {
+				color: blue;
+				font-weight: bold;
+			}
+			#errorMessage {
+				font-weight: bold;
+				color: red;
+			}
+			.output {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body id="body">
+		<script src="scripts/main.js"></script>
+		<button onclick="m_item2.remove('removeMenuItem');">Remove menu item</button> <output class="output" id="removeMenuItem"></output>
+		<br><br>
+		<button onclick="menu.remove('removeMenu');">Remove menu</button> <output class="output" id="removeMenu"></output>
+		<br><br>
+		<h1>Order your Hamburger!</h1>
+		<label>Choose size:</label>
+		<input type="radio" name="size" value="small">Small
+		<input type="radio" name="size" value="large" checked>Large
+		<br>
+		<label>Choose stuffing:</label>
+		<input type="radio" name="stuffing" value="cheese">Cheese
+		<input type="radio" name="stuffing" value="salad">Salad
+		<input type="radio" name="stuffing" value="potato" checked>Potato
+		<br>
+		<label>Select topping:</label>
+		<input type="checkbox" name="topping" value="mayo">Mayo
+		<input type="checkbox" name="topping" value="spice">Spice
+		<br><br>
+		<button onclick="calculateOrder();">Calculate order</button>
+		<br><br>
+		<span id="totalPriceLabel">Price: <output id="totalPriceValue"></output></span>
+		<br>
+		<span id="totalCaloriesLabel">Calories: <output id="totalCaloriesValue"></output></span>
+		<br>
+		<output id="errorMessage"></output>
+		<script src="scripts/hamburger.js"></script>
+		<noscript>
+			Your browser doesn't support JavaScript or JavaScript is disabled in your browser.
+		</noscript>
+	</body>
+</html>
