@@ -1,0 +1,26 @@
+[
+	{
+		"name": "City",
+		"src": "wallpaper_city.jpg"
+	},
+	{
+		"name": "Clouds",
+		"src": "wallpaper_clouds.jpg"
+	},
+	{
+		"name": "Fire & Ice",
+		"src": "wallpaper_fireandice.jpg"
+	},
+	{
+		"name": "London",
+		"src": "wallpaper_london.jpg"
+	},
+	{
+		"name": "Nightsky",
+		"src": "wallpaper_nightsky.jpg"
+	},
+	{
+		"name": "River",
+		"src": "wallpaper_river.jpg"
+	}
+]

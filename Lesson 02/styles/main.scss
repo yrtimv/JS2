@@ -1,0 +1,159 @@
+.taskSelect {
+	margin-left: 50px;
+	margin-top: 20px;
+	height: 30px;
+	display: flex;
+	width: 350px;
+	justify-content: space-between;
+}
+
+.taskHeader {
+	margin: 0;
+	font-size: 1.5em;
+}
+
+@mixin outputInit() {
+	display: none;
+	margin: 20px 50px;
+}
+
+.outputGallery {
+	@include outputInit();
+}
+
+.imageWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.originalInner {
+	width: 960px;
+	height: 540px;
+	margin: 30px;
+	border: 3px double #333;
+	background-color: rgba(33, 33, 33, 0.66);
+	text-align: center;
+}
+
+.originalNA {
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 2.5em;
+	line-height: 540px;
+	margin: 0;
+	text-shadow: 2px 2px 5px black;
+	display: none;
+}
+
+.originalImage {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.thumbnails {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.buttonActive {
+	background: linear-gradient(to bottom, #f6e6b4 0%, #ed9017 100%);
+}
+
+.arrow {
+	cursor: pointer;
+	font-size: 2.5em;
+	&:hover {
+		color: goldenrod;
+	}
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.caption {
+	font-family: Arial, sans-serif;
+	margin-top: 0;
+	text-align: center;
+	color: blue;
+	text-shadow: 2px 2px 3px gray;
+}
+
+.slick-slide {
+	margin-left: 15px;
+	margin-right: 15px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+.outputRequests {
+	@include outputInit();
+}
+
+.menuWrapper {
+	border: 3px solid blue;
+}
+
+#createMenu,
+#testRequest {
+	margin-top: 15px;
+	margin-left: 15px;
+}
+
+.mainMenuWrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.mainMenu {
+	list-style-type: none;
+	li {
+		display: inline;
+		margin: 0 10px;
+	}
+}
+
+.errorMsgWrapper {
+	margin: 20px auto;
+	display: none;
+	box-shadow: 2px 2px 5px #333;
+	border: 1px solid #300;
+}
+
+@mixin msgTitle($color) {
+	color: $color;
+	font-family: Arial, sans-serif;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #300;
+	font-weight: bold;
+	margin: 10px 20px;
+}
+
+.errorMsgTitle {
+	@include msgTitle(red);
+}
+
+.successMsgTitle {
+	@include msgTitle(blue);
+}
+
+.errorMsgText,
+.testMsgText {
+	color: black;
+	margin: 10px 20px;
+}
+
+.testRequestWrapper {
+	margin-top: 20px;
+	border: 3px solid blue;
+}

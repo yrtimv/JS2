@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Level 2 homework, leson 02</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="packages/slick/slick.css">
+		<link rel="stylesheet" href="packages/slick/slick-theme.css">
+		<link rel="stylesheet" href="packages/fontawesome/css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body onload="init();">
+		<header class="taskSelect">
+			<h2 class="taskHeader">Select a task to view:</h2>
+			<button class="button buttonGallery" onclick="showTask(this, 'Gallery');">Gallery</button>
+			<button class="button buttonRequests" onclick="showTask(this, 'Requests');">Requests</button>
+		</header>
+		<div class="output outputGallery">
+			<div class="imageWrapper">
+				<i class="fas fa-chevron-circle-left arrow invisible" onclick="prevSlide();"></i>
+				<div class="originalInner">
+					<h2 class="originalNA">Image not available</h2>
+					<img class="originalImage" src="" alt="">
+				</div>
+				<i class="fas fa-chevron-circle-right arrow" onclick="nextSlide();"></i>
+			</div>
+			<h2 class="caption"></h2>
+			<div class="thumbnails">
+				<!-- Thumnails are created here with JS and AJAX. -->
+			</div>
+		</div>
+		<div class="output outputRequests">
+			<div class="menuWrapper">
+				<button id="createMenu">Create AJAX menu</button>
+				<br>
+				<div class="mainMenuWrapper">
+					<ul class="mainMenu">
+						<!-- Menu is created here with JS and AJAX. -->
+					</ul>
+				</div>
+				<div class="catalogWrapper">
+					<ul class="catalogMenu">
+						<!-- Catalog menu is created here with JS and AJAX. -->
+					</ul>
+				</div>
+				<br>
+				<div class="errorMsgWrapper">
+					<p class="errorMsgTitle">Error</p>
+					<p class="errorMsgText">Request timeout.</p>
+				</div>
+			</div>
+			<div class="testRequestWrapper">
+				<button id="testRequest">Test request</button>
+				<br>
+				<div class="msgWrapper">
+					<p class="testMsgTitle"></p>
+					<p class="testMsgText"></p>
+				</div>
+			</div>
+			</div>
+		<script src="packages/jquery/jquery-3.3.1.min.js"></script>
+		<script src="packages/slick/slick.min.js"></script>
+		<script src="scripts/main.js"></script>
+		<noscript>
+			Your browser doesn't support JavaScript or JavaScript is disabled in your browser.
+		</noscript>
+	</body>
+</html>

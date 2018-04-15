@@ -1,0 +1,126 @@
+{
+	"mainMenu": [
+		{
+			"name": "Доставка",
+			"href": "/delivery.html"
+		},
+		{
+			"name": "Самовывоз",
+			"href": "/pickup.html"
+		},
+		{
+			"name": "Бонусы",
+			"href": "/bonuses.html"
+		},
+		{
+			"name": "Скидки",
+			"href": "/discounts.html"
+		},
+		{
+			"name": "Магазины",
+			"href": "/shops.html"
+		},
+		{
+			"name": "Гарантия",
+			"href": "/guarantee.html"
+		},
+		{
+			"name": "Контакты",
+			"href": "/contacts.html"
+		},
+		{
+			"name": "Обзоры товаров",
+			"href": "/goods_reviews.html"
+		},
+		{
+			"name": "Личный кабинет",
+			"href": "/personal_area.html"
+		}
+	],
+	"catalog": [
+		{
+			"name": "Телефоны и гаджеты",
+			"href": "/phones_gadgets.html",
+			"items": [
+				{
+					"name": "Смартфоны",
+					"href": "/phones_gadgets/smartphones.html"
+				},
+				{
+					"name": "Мобильные телефоны",
+					"href": "/phones_gadgets/mobile_phones.html"
+				},
+				{
+					"name": "Умные часы",
+					"href": "/phones_gadgets/mobile_phones.html"
+				},
+				{
+					"name": "Спортивные браслеты",
+					"href": "/phones_gadgets/wrist_bands.html"
+				}
+			]
+		},
+		{
+			"name": "Фото-видео",
+			"href": "/photo_video.html",
+			"items": [
+				{
+					"name": "Фотоаппараты",
+					"href": "/photo_video/photo_cameras.html"
+				},
+				{
+					"name": "Видеокамеры",
+					"href": "/photo_video/video_cameras.html"
+				},
+				{
+					"name": "Аксессуары для фото-видео",
+					"href": "/photo_video/accessories.html"
+				}
+			]
+		},
+		{
+			"name": "Компьютеры и периферия",
+			"href": "/computers_officeequip.html",
+			"items": [
+				{
+					"name": "Компьютеры",
+					"href": "/computers_officeequip/computers.html"
+				},
+				{
+					"name": "Мониторы",
+					"href": "/computers_officeequip/monitors.html"
+				},
+				{
+					"name": "Сетевые хранилища",
+					"href": "/computers_officeequip/nas.html"
+				},
+				{
+					"name": "Сетевое оборудование",
+					"href": "/computers_officeequip/network_equip.html"
+				},
+				{
+					"name": "Программное обеспечение",
+					"href": "/computers_officeequip/software.html"
+				}
+			]
+		},
+		{
+			"name": "Планшеты и ноутбуки",
+			"href": "/tables_notebooks.html",
+			"items": [
+				{
+					"name": "Планшеты",
+					"href": "/tables_notebooks/tables.html"
+				},
+				{
+					"name": "Ноутбуки",
+					"href": "/tables_notebooks/notebooks.html"
+				},
+				{
+					"name": "Электронные книги",
+					"href": "/tables_notebooks/bookreaders.html"
+				}
+			]
+		}
+	]
+}
