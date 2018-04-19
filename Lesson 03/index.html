@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Level 2 homework, leson 03</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<h2>Task 1-2</h2>
+		<p class="description">Enter your text here:</p>
+		<textarea id="text" cols="100" rows="13">'Hello!'   'Ain't nobody's business!'</textarea>
+		<br>
+		<button id="replaceQuotes">Replace quotes</button>
+		<p id="task12Msg" class="taskMsg"></p>
+		<br><br>
+		<h2>Task 3</h2>
+		<form id="form" action="#" autocomplete="off">
+			<fieldset class="form">
+				<label for="name">Name:</label>
+				<input type="text" id="name" maxlength="30">
+				<span class="hint">Letters only</span> <br><br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" maxlength="22">
+				<span class="hint">+7 (xxx) xxx-xxxx</span> <br><br>
+				<label for="email">Email:</label>
+				<input type="text" id="email" maxlength="40">
+				<span class="hint">my.email@domain.net</span> <br><br>
+				<label for="message">Message:</label> <br>
+				<textarea id="message" cols="60" rows="7"></textarea> <br>
+				<input type="submit">
+				<p class="formText validationSuccess">Form validation successful!</p>
+				<p class="formText validationError">Form validation error!</p>
+			</fieldset>
+		</form>
+		<script src="packages/jquery/jquery-3.3.1.min.js"></script>
+		<script src="packages/jquery-text-change-custom-event/jquery.textchange.min.js"></script>
+		<script src="scripts/main.js"></script>
+		<noscript>
+			Your browser doesn't support JavaScript or JavaScript is disabled in your browser.
+		</noscript>
+	</body>
+</html>

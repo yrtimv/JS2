@@ -1,0 +1,44 @@
+.taskMsg {
+	display: inline-block;
+	color: red;
+	text-shadow: 1px 1px 2px black;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.hint {
+	font-size: 0.75em;
+	font-family: Arial, sans-serif;
+	color: #999;
+	margin-left: 20px;
+}
+
+.invalidField {
+	border: 3px solid red;
+}
+
+.formText {
+	display: none;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+	
+.validationError {
+	color: red;
+	text-shadow: 1px 1px 2px darkred;
+}
+
+.validationSuccess {
+	color: blue;
+	text-shadow: 1px 1px 2px navy;
+}
+
+.form {
+	width: 500px;
+}
+
+form label {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
