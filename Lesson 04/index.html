@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Level 2 homework, lesson 04</title>
+		<link rel="stylesheet" href="styles/main.css">
+	</head>
+	<body>
+		<h2>Task 1</h2>
+		<div class="tabs">
+			<div class="tabsHeader">
+				<div class="tab" id="tab1" data-clickable="true">Tab 1</div>
+				<div class="tab" id="tab2" data-clickable="true">Tab 2</div>
+				<div class="tab" id="tab3" data-clickable="true">Tab 3</div>
+				<div class="tab" id="tab4" data-clickable="true">Tab 4</div>
+				<div class="tab" id="tab5" data-clickable="true">Tab 5</div>
+			</div>
+			<div class="tabContent">
+				<div class="tabContentInner">
+					<!-- Tab contents is filled with jQ AJAX -->
+				</div>
+			</div>
+		</div>
+		<h2>Task 2-3</h2>
+		<div class="formWrapper">
+			<form id="form" action="#" autocomplete="off">
+				<fieldset class="form">
+					<label for="name">Name:</label>
+					<input type="text" id="name" maxlength="30">
+					<span class="hint">Letters only</span> <br><br>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" maxlength="22">
+					<span class="hint">+7 (xxx) xxx-xxxx</span> <br><br>
+					<label for="email">Email:</label>
+					<input type="text" id="email" maxlength="40">
+					<span class="hint">my.email@domain.net</span> <br><br>
+					<label for="city">City:</label>
+					<input id="city" list="cityList">
+					<datalist id="cityList">
+					</datalist> <br><br>
+					<label for="message">Message:</label> <br>
+					<textarea id="message" cols="60" rows="7"></textarea> <br>
+					<input type="submit">
+					<p class="formText validationSuccess">Form validation successful!</p>
+					<p class="formText validationError">Form validation error!</p>
+				</fieldset>
+			</form>
+		</div>
+		<script src="packages/jquery/jquery-3.3.1.min.js"></script>
+		<script src="packages/jquery-text-change-custom-event/jquery.textchange.min.js"></script>
+		<script src="scripts/main.js" defer></script>
+		<noscript>
+			Your browser doesn't support JavaScript or JavaScript is disabled in your browser.
+		</noscript>
+	</body>
+</html>
