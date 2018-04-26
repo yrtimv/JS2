@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson5</title>
+	<script src="jquery-3.3.1.js"></script>
+	<script src="Basket.js"></script>
+	<script>
+		$(document).ready(function () {
+			var basket = new Basket('basket');
+
+			basket.render('#basket_wrapper');
+
+			$('.good_buy').on('click', function () {
+				var idProduct = parseInt($(this).attr('data-id'));
+				var price = parseInt($(this).parent().find('.product-price').text());
+				
+				basket.add(idProduct, price);
+				$('.good_remove').show();
+			});
+			
+			$('.good_remove').on('click', function () {
+				var idProduct = parseInt($(this).attr('data-id'));
+				var price = parseInt($(this).parent().find('.product-price').text());
+				
+				if (!basket.remove(idProduct, price)) {
+					$(this).hide();
+				}
+			});
+		});
+	</script>
+	<style>
+		.good {
+			padding: 10px;
+			margin: 10px;
+			border: 1px solid lightgreen;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body>
+<div id="basket_wrapper"></div>
+<hr>
+<div class="good">
+	<p>Монитор для ПК</p>
+	<p>Стоимость: <span class="product-price">8000</span> руб.</p>
+	<button class="good_buy" data-id="125">Купить</button>
+	<button class="good_remove" data-id="125">Удалить</button>
+</div>
+</body>
+</html>
