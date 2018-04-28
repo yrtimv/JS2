@@ -33,3 +33,10 @@
 ## Advanced feedback form validation
 * Changed email validation regexp pattern for more universal form.
 * Added a *City* field, linked with an empty data list. This data list is filled with Russian city names, matching the entered pattern (**3+ chars**), fetched from VK API by *jsonp* cross-domain method. If the user enters less than 3 chars in the city field, this data list is cleared.
+
+# Lesson 05
+## Simple basket module
+* Finilized the basket module with a method *remove*, which removes one item and recalculates total basket price.
+
+## User reviews module
+* Designed a module, split in user and admin sections (left and right sides of the page respectively). A user can enter his name and a text to send it for approval, while the admin can approve (the review will be shown in the user section), disapprove (the review will not be shown in the user section) and delete (the review will be deleted from both sections) reviews. First set of reviews is loaded from JSON file.
