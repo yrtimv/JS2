@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Level 2 homework, lesson 07</title>
+		<link rel="stylesheet" href="packages/jquery-ui/jquery-ui.min.css">
+		<link rel="stylesheet" href="packages/jquery-ui/jquery-ui.theme.min.css">
+		<link rel="stylesheet" href="styles/main.min.css">
+	</head>
+	<body>
+		<h2>Task 1-2</h2>
+		<div id="errorMessageDialog" title="Form validation error">
+			<p class="errorMessageText"></p>
+		</div>
+		<div class="formWrapper">
+			<form id="form" action="#" autocomplete="off">
+				<fieldset class="form">
+					<label for="name">Name:</label>
+					<input type="text" id="name" maxlength="30">
+					<span class="hint">Letters only</span> <br><br>
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" maxlength="22">
+					<span class="hint">+7 (xxx) xxx-xxxx</span> <br><br>
+					<label for="email">Email:</label>
+					<input type="text" id="email" maxlength="40">
+					<span class="hint">my.email@domain.net</span> <br><br>
+					<label for="birthday">Birthday:</label>
+					<input type="text" id="birthday"> <br><br>
+					<label for="city">City:</label>
+					<input id="city" list="cityList">
+					<datalist id="cityList">
+					</datalist> <br><br>
+					<label for="message">Message:</label> <br>
+					<textarea id="message" cols="60" rows="3"></textarea> <br>
+					<input type="submit">
+				</fieldset>
+			</form>
+		</div>
+		<br>
+		<h2>Task 3-4</h2>
+		<div class="showcaseWrapper">
+			<div class="cartWrapper">
+				<p class="cartHint">Drag goods here</p>
+				<img class="shoppingCart" src="images/cart_empty.png" alt="Shopping cart">
+				<div class="cartInfo">
+					<img src="images/total_cost.png" alt="Total cost" class="totalCostImage">
+					<span class="totalCostValue">0</span>
+					<div class="itemsAmount">0</div>
+				</div>
+			</div>
+			<div class="emptyCart" title="Drag full cart here">!Empty cart</div>
+			<div class="items">
+			</div>
+		</div>
+		<script src="packages/jquery/jquery.js"></script>
+		<script src="packages/jquery-textchange/jquery.textchange.js"></script>
+		<script src="packages/jquery-ui/jquery-ui.js"></script>
+		<script src="scripts/main.min.js"></script>
+		<noscript>
+			Your browser doesn't support JavaScript or JavaScript is disabled in your browser.
+		</noscript>
+	</body>
+</html>
