@@ -46,3 +46,11 @@
 * Added a **Birthday** field to choose a date from a convenient UI calendar (with **yyyy/mm/dd** format). Required field with regexp validation.
 ## Addition to the simple cart module (drag & drop)
 * Redesigned the cart module with a few goods and a shopping cart empty feature. Added a drag & drop feature for goods (to add to the cart) and the cart (to empty it).
+
+# Lesson 07
+## Gulp project compiler
+* Used Gulp for compile the project into a compact bundle with all resources.
+
+# Lesson 08
+## Jasmine test component
+* Used Jasmine test component to run unit tests on some feedback form and shopping cart modules. One page (**jasmine-pass.html**) is for successful tests and another one (**jasmine-fail.html**) for a failed test example.
