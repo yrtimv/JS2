@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JavaScript Level 2 homework, lesson 08 (Failed test)</title>
+	<link rel="stylesheet" href="bower_components/jasmine-core/lib/jasmine-core/jasmine.css">
+	<script src="bower_components/jasmine-core/lib/jasmine-core/jasmine.js"></script>
+	<script src="bower_components/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
+	<script src="bower_components/jasmine-core/lib/jasmine-core/boot.js"></script>
+	<script src="scripts/cart.js"></script>
+	<script>
+		describe('Cart validation.', () => {
+			it('Add sports cloth items to the cart (4 items).', () => {
+				addItem(basket, [1, 2, 3, 4]);
+
+				expect(getBasketItemCount(basket)).toEqual(4);
+				expect(getBasketTotalPrice(basket)).toEqual(600);
+			});
+
+			it('Add casual cloth items to the cart (2 items).', () => {
+				clearBasket(basket);
+
+				addItem(basket, [0, 5]);
+
+				expect(getBasketItemCount(basket)).toEqual(1);
+				expect(getBasketTotalPrice(basket)).toEqual(260);
+			});
+		});
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
